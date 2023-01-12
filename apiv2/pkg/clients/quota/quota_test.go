@@ -8,7 +8,6 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/goharbor/harbor/src/pkg/quota/types"
 	"github.com/mittwald/goharbor-client/v5/apiv2/internal/api/client/quota"
 	"github.com/mittwald/goharbor-client/v5/apiv2/mocks"
 	modelv2 "github.com/mittwald/goharbor-client/v5/apiv2/model"
@@ -85,7 +84,7 @@ func TestRESTClient_GetQuotaByProjectID(t *testing.T) {
 		Return(&quota.ListQuotasOK{
 			Payload: []*modelv2.Quota{{
 				Hard: modelv2.ResourceList{
-					string(types.ResourceStorage): 10,
+					"storage": 10,
 				},
 				ID: exampleProjectID,
 				Ref: modelv2.QuotaRefObject(map[string]interface{}{
@@ -111,7 +110,7 @@ func TestRESTClient_UpdateStorageQuotaByProjectID(t *testing.T) {
 		updateParams := &quota.UpdateQuotaParams{
 			Hard: &modelv2.QuotaUpdateReq{
 				Hard: modelv2.ResourceList{
-					string(types.ResourceStorage): testStorageLimitPositive,
+					"storage": testStorageLimitPositive,
 				},
 			},
 			ID:      exampleQuotaID,
@@ -135,7 +134,7 @@ func TestRESTClient_UpdateStorageQuotaByProjectID(t *testing.T) {
 		updateParams := &quota.UpdateQuotaParams{
 			Hard: &modelv2.QuotaUpdateReq{
 				Hard: modelv2.ResourceList{
-					string(types.ResourceStorage): testStorageLimitNegative,
+					"storage": testStorageLimitNegative,
 				},
 			},
 			ID:      exampleQuotaID,
@@ -159,7 +158,7 @@ func TestRESTClient_UpdateStorageQuotaByProjectID(t *testing.T) {
 		updateParams := &quota.UpdateQuotaParams{
 			Hard: &modelv2.QuotaUpdateReq{
 				Hard: modelv2.ResourceList{
-					string(types.ResourceStorage): testStorageLimitNegative,
+					"storage": testStorageLimitNegative,
 				},
 			},
 			ID:      exampleQuotaID,
