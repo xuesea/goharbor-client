@@ -3,7 +3,7 @@ package replication
 import (
 	"context"
 
-	"github.com/go-openapi/runtime/*  */"
+	"github.com/go-openapi/runtime"
 
 	v2client "github.com/xuesea/goharbor-client/v5/apiv2/internal/api/client"
 	replicationapi "github.com/xuesea/goharbor-client/v5/apiv2/internal/api/client/replication"
