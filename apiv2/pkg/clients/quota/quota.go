@@ -7,7 +7,6 @@ import (
 	"strconv"
 
 	"github.com/go-openapi/runtime"
-	"github.com/goharbor/harbor/src/pkg/quota/types"
 
 	v2client "github.com/mittwald/goharbor-client/v5/apiv2/internal/api/client"
 	"github.com/mittwald/goharbor-client/v5/apiv2/internal/api/client/quota"
@@ -106,13 +105,13 @@ func (c *RESTClient) GetQuotaByProjectID(ctx context.Context, projectID int64) (
 // A storageLimit value smaller than '0' will implicitly be set to '-1', equalling the 'unlimited' setting.
 func (c *RESTClient) UpdateStorageQuotaByProjectID(ctx context.Context, projectID int64, storageLimit int64) error {
 	if storageLimit <= 0 {
-		storageLimit = types.UNLIMITED
+		storageLimit = -1
 	}
 
 	params := &quota.UpdateQuotaParams{
 		Hard: &model.QuotaUpdateReq{
 			Hard: model.ResourceList{
-				string(types.ResourceStorage): storageLimit,
+				"storage": storageLimit,
 			},
 		},
 		ID:      projectID,
