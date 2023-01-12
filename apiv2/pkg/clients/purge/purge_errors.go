@@ -2,7 +2,7 @@ package purge
 
 import (
 	"github.com/go-openapi/runtime"
-	"github.com/mittwald/goharbor-client/v5/apiv2/pkg/errors"
+	"github.com/xuesea/goharbor-client/v5/apiv2/pkg/errors"
 	"net/http"
 )
 

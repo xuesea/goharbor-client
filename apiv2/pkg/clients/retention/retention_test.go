@@ -11,12 +11,12 @@ import (
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"
 
-	projectmeta "github.com/mittwald/goharbor-client/v5/apiv2/internal/api/client/project_metadata"
-	"github.com/mittwald/goharbor-client/v5/apiv2/internal/api/client/retention"
-	"github.com/mittwald/goharbor-client/v5/apiv2/mocks"
-	modelv2 "github.com/mittwald/goharbor-client/v5/apiv2/model"
-	"github.com/mittwald/goharbor-client/v5/apiv2/pkg/common"
-	clienttesting "github.com/mittwald/goharbor-client/v5/apiv2/pkg/testing"
+	projectmeta "github.com/xuesea/goharbor-client/v5/apiv2/internal/api/client/project_metadata"
+	"github.com/xuesea/goharbor-client/v5/apiv2/internal/api/client/retention"
+	"github.com/xuesea/goharbor-client/v5/apiv2/mocks"
+	modelv2 "github.com/xuesea/goharbor-client/v5/apiv2/model"
+	"github.com/xuesea/goharbor-client/v5/apiv2/pkg/common"
+	clienttesting "github.com/xuesea/goharbor-client/v5/apiv2/pkg/testing"
 )
 
 var ctx = context.Background()

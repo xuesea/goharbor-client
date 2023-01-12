@@ -2,44 +2,44 @@ package apiv2
 
 import (
 	"context"
-	"github.com/mittwald/goharbor-client/v5/apiv2/pkg/clients/ping"
+	"github.com/xuesea/goharbor-client/v5/apiv2/pkg/clients/ping"
 	"net/url"
 	"strings"
 
-	"github.com/mittwald/goharbor-client/v5/apiv2/pkg/clients/purge"
+	"github.com/xuesea/goharbor-client/v5/apiv2/pkg/clients/purge"
 
-	"github.com/mittwald/goharbor-client/v5/apiv2/pkg/clients/label"
+	"github.com/xuesea/goharbor-client/v5/apiv2/pkg/clients/label"
 
-	"github.com/mittwald/goharbor-client/v5/apiv2/pkg/clients/artifact"
-	"github.com/mittwald/goharbor-client/v5/apiv2/pkg/clients/repository"
+	"github.com/xuesea/goharbor-client/v5/apiv2/pkg/clients/artifact"
+	"github.com/xuesea/goharbor-client/v5/apiv2/pkg/clients/repository"
 
 	"k8s.io/apimachinery/pkg/util/intstr"
 
-	modelv2 "github.com/mittwald/goharbor-client/v5/apiv2/model"
-	"github.com/mittwald/goharbor-client/v5/apiv2/pkg/clients/auditlog"
-	"github.com/mittwald/goharbor-client/v5/apiv2/pkg/clients/gc"
-	"github.com/mittwald/goharbor-client/v5/apiv2/pkg/clients/health"
-	"github.com/mittwald/goharbor-client/v5/apiv2/pkg/clients/member"
-	"github.com/mittwald/goharbor-client/v5/apiv2/pkg/clients/projectmeta"
-	"github.com/mittwald/goharbor-client/v5/apiv2/pkg/clients/quota"
-	"github.com/mittwald/goharbor-client/v5/apiv2/pkg/clients/retention"
-	"github.com/mittwald/goharbor-client/v5/apiv2/pkg/clients/robot"
-	"github.com/mittwald/goharbor-client/v5/apiv2/pkg/clients/robotv1"
-	"github.com/mittwald/goharbor-client/v5/apiv2/pkg/clients/webhook"
-	"github.com/mittwald/goharbor-client/v5/apiv2/pkg/common"
-	"github.com/mittwald/goharbor-client/v5/apiv2/pkg/config"
+	modelv2 "github.com/xuesea/goharbor-client/v5/apiv2/model"
+	"github.com/xuesea/goharbor-client/v5/apiv2/pkg/clients/auditlog"
+	"github.com/xuesea/goharbor-client/v5/apiv2/pkg/clients/gc"
+	"github.com/xuesea/goharbor-client/v5/apiv2/pkg/clients/health"
+	"github.com/xuesea/goharbor-client/v5/apiv2/pkg/clients/member"
+	"github.com/xuesea/goharbor-client/v5/apiv2/pkg/clients/projectmeta"
+	"github.com/xuesea/goharbor-client/v5/apiv2/pkg/clients/quota"
+	"github.com/xuesea/goharbor-client/v5/apiv2/pkg/clients/retention"
+	"github.com/xuesea/goharbor-client/v5/apiv2/pkg/clients/robot"
+	"github.com/xuesea/goharbor-client/v5/apiv2/pkg/clients/robotv1"
+	"github.com/xuesea/goharbor-client/v5/apiv2/pkg/clients/webhook"
+	"github.com/xuesea/goharbor-client/v5/apiv2/pkg/common"
+	"github.com/xuesea/goharbor-client/v5/apiv2/pkg/config"
 
 	"github.com/go-openapi/runtime"
 	runtimeclient "github.com/go-openapi/runtime/client"
 	"github.com/go-openapi/strfmt"
 
-	v2client "github.com/mittwald/goharbor-client/v5/apiv2/internal/api/client"
+	v2client "github.com/xuesea/goharbor-client/v5/apiv2/internal/api/client"
 
-	"github.com/mittwald/goharbor-client/v5/apiv2/pkg/clients/project"
-	"github.com/mittwald/goharbor-client/v5/apiv2/pkg/clients/registry"
-	"github.com/mittwald/goharbor-client/v5/apiv2/pkg/clients/replication"
-	"github.com/mittwald/goharbor-client/v5/apiv2/pkg/clients/systeminfo"
-	"github.com/mittwald/goharbor-client/v5/apiv2/pkg/clients/user"
+	"github.com/xuesea/goharbor-client/v5/apiv2/pkg/clients/project"
+	"github.com/xuesea/goharbor-client/v5/apiv2/pkg/clients/registry"
+	"github.com/xuesea/goharbor-client/v5/apiv2/pkg/clients/replication"
+	"github.com/xuesea/goharbor-client/v5/apiv2/pkg/clients/systeminfo"
+	"github.com/xuesea/goharbor-client/v5/apiv2/pkg/clients/user"
 )
 
 const v2URLSuffix string = "/v2.0"

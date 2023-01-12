@@ -5,12 +5,12 @@ import (
 
 	"github.com/go-openapi/runtime"
 
-	v2client "github.com/mittwald/goharbor-client/v5/apiv2/internal/api/client"
-	"github.com/mittwald/goharbor-client/v5/apiv2/internal/api/client/gc"
-	"github.com/mittwald/goharbor-client/v5/apiv2/pkg/config"
-	"github.com/mittwald/goharbor-client/v5/apiv2/pkg/errors"
+	v2client "github.com/xuesea/goharbor-client/v5/apiv2/internal/api/client"
+	"github.com/xuesea/goharbor-client/v5/apiv2/internal/api/client/gc"
+	"github.com/xuesea/goharbor-client/v5/apiv2/pkg/config"
+	"github.com/xuesea/goharbor-client/v5/apiv2/pkg/errors"
 
-	"github.com/mittwald/goharbor-client/v5/apiv2/model"
+	"github.com/xuesea/goharbor-client/v5/apiv2/model"
 )
 
 // RESTClient is a subclient for handling garbage collection related actions.
