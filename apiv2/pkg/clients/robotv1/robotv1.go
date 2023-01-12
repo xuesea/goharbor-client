@@ -4,10 +4,10 @@ import (
 	"context"
 
 	"github.com/go-openapi/runtime"
-	v2client "github.com/mittwald/goharbor-client/v5/apiv2/internal/api/client"
-	"github.com/mittwald/goharbor-client/v5/apiv2/internal/api/client/robotv1"
-	modelv2 "github.com/mittwald/goharbor-client/v5/apiv2/model"
-	"github.com/mittwald/goharbor-client/v5/apiv2/pkg/config"
+	v2client "github.com/xuesea/goharbor-client/v5/apiv2/internal/api/client"
+	"github.com/xuesea/goharbor-client/v5/apiv2/internal/api/client/robotv1"
+	modelv2 "github.com/xuesea/goharbor-client/v5/apiv2/model"
+	"github.com/xuesea/goharbor-client/v5/apiv2/pkg/config"
 )
 
 // RESTClient is a subclient for handling project related actions.

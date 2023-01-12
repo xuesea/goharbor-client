@@ -4,13 +4,13 @@ import (
 	"context"
 	goerr "errors"
 
-	projectapi "github.com/mittwald/goharbor-client/v5/apiv2/internal/api/client/project"
-	"github.com/mittwald/goharbor-client/v5/apiv2/pkg/config"
-	"github.com/mittwald/goharbor-client/v5/apiv2/pkg/errors"
-	"github.com/mittwald/goharbor-client/v5/apiv2/pkg/util"
+	projectapi "github.com/xuesea/goharbor-client/v5/apiv2/internal/api/client/project"
+	"github.com/xuesea/goharbor-client/v5/apiv2/pkg/config"
+	"github.com/xuesea/goharbor-client/v5/apiv2/pkg/errors"
+	"github.com/xuesea/goharbor-client/v5/apiv2/pkg/util"
 
-	v2client "github.com/mittwald/goharbor-client/v5/apiv2/internal/api/client"
-	"github.com/mittwald/goharbor-client/v5/apiv2/model"
+	v2client "github.com/xuesea/goharbor-client/v5/apiv2/internal/api/client"
+	"github.com/xuesea/goharbor-client/v5/apiv2/model"
 
 	"github.com/go-openapi/runtime"
 )

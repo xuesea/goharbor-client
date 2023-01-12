@@ -4,7 +4,7 @@ package mocks
 
 import (
 	runtime "github.com/go-openapi/runtime"
-	purge "github.com/mittwald/goharbor-client/v5/apiv2/internal/api/client/purge"
+	purge "github.com/xuesea/goharbor-client/v5/apiv2/internal/api/client/purge"
 	mock "github.com/stretchr/testify/mock"
 )
 

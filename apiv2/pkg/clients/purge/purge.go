@@ -5,11 +5,11 @@ import (
 	"encoding/json"
 
 	"github.com/go-openapi/runtime"
-	v2client "github.com/mittwald/goharbor-client/v5/apiv2/internal/api/client"
-	"github.com/mittwald/goharbor-client/v5/apiv2/internal/api/client/purge"
-	"github.com/mittwald/goharbor-client/v5/apiv2/model"
-	"github.com/mittwald/goharbor-client/v5/apiv2/pkg/config"
 	"github.com/pkg/errors"
+	v2client "github.com/xuesea/goharbor-client/v5/apiv2/internal/api/client"
+	"github.com/xuesea/goharbor-client/v5/apiv2/internal/api/client/purge"
+	"github.com/xuesea/goharbor-client/v5/apiv2/model"
+	"github.com/xuesea/goharbor-client/v5/apiv2/pkg/config"
 )
 
 // RESTClient is a subclient for handling purge related actions.

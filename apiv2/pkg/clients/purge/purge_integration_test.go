@@ -7,9 +7,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/mittwald/goharbor-client/v5/apiv2/model"
-	clienttesting "github.com/mittwald/goharbor-client/v5/apiv2/pkg/testing"
 	"github.com/stretchr/testify/require"
+	"github.com/xuesea/goharbor-client/v5/apiv2/model"
+	clienttesting "github.com/xuesea/goharbor-client/v5/apiv2/pkg/testing"
 )
 
 func TestAPICreatePurgeSchedule(t *testing.T) {

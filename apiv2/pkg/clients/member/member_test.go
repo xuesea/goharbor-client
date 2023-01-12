@@ -11,11 +11,11 @@ import (
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"
 
-	"github.com/mittwald/goharbor-client/v5/apiv2/internal/api/client/member"
-	"github.com/mittwald/goharbor-client/v5/apiv2/mocks"
-	modelv2 "github.com/mittwald/goharbor-client/v5/apiv2/model"
-	"github.com/mittwald/goharbor-client/v5/apiv2/pkg/errors"
-	clienttesting "github.com/mittwald/goharbor-client/v5/apiv2/pkg/testing"
+	"github.com/xuesea/goharbor-client/v5/apiv2/internal/api/client/member"
+	"github.com/xuesea/goharbor-client/v5/apiv2/mocks"
+	modelv2 "github.com/xuesea/goharbor-client/v5/apiv2/model"
+	"github.com/xuesea/goharbor-client/v5/apiv2/pkg/errors"
+	clienttesting "github.com/xuesea/goharbor-client/v5/apiv2/pkg/testing"
 )
 
 var (

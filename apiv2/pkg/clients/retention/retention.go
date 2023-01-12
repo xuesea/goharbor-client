@@ -8,12 +8,12 @@ import (
 
 	"github.com/go-openapi/runtime"
 
-	v2client "github.com/mittwald/goharbor-client/v5/apiv2/internal/api/client"
-	"github.com/mittwald/goharbor-client/v5/apiv2/internal/api/client/retention"
-	modelv2 "github.com/mittwald/goharbor-client/v5/apiv2/model"
-	"github.com/mittwald/goharbor-client/v5/apiv2/pkg/clients/projectmeta"
-	"github.com/mittwald/goharbor-client/v5/apiv2/pkg/common"
-	"github.com/mittwald/goharbor-client/v5/apiv2/pkg/config"
+	v2client "github.com/xuesea/goharbor-client/v5/apiv2/internal/api/client"
+	"github.com/xuesea/goharbor-client/v5/apiv2/internal/api/client/retention"
+	modelv2 "github.com/xuesea/goharbor-client/v5/apiv2/model"
+	"github.com/xuesea/goharbor-client/v5/apiv2/pkg/clients/projectmeta"
+	"github.com/xuesea/goharbor-client/v5/apiv2/pkg/common"
+	"github.com/xuesea/goharbor-client/v5/apiv2/pkg/config"
 )
 
 const (

@@ -8,11 +8,11 @@ import (
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"
 
-	"github.com/mittwald/goharbor-client/v5/apiv2/internal/api/client/webhook"
-	"github.com/mittwald/goharbor-client/v5/apiv2/mocks"
-	modelv2 "github.com/mittwald/goharbor-client/v5/apiv2/model"
-	clienttesting "github.com/mittwald/goharbor-client/v5/apiv2/pkg/testing"
-	"github.com/mittwald/goharbor-client/v5/apiv2/pkg/util"
+	"github.com/xuesea/goharbor-client/v5/apiv2/internal/api/client/webhook"
+	"github.com/xuesea/goharbor-client/v5/apiv2/mocks"
+	modelv2 "github.com/xuesea/goharbor-client/v5/apiv2/model"
+	clienttesting "github.com/xuesea/goharbor-client/v5/apiv2/pkg/testing"
+	"github.com/xuesea/goharbor-client/v5/apiv2/pkg/util"
 )
 
 var (

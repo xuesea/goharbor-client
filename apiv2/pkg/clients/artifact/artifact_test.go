@@ -6,12 +6,12 @@ import (
 	"context"
 	"testing"
 
-	"github.com/mittwald/goharbor-client/v5/apiv2/internal/api/client/artifact"
-	"github.com/mittwald/goharbor-client/v5/apiv2/mocks"
-	"github.com/mittwald/goharbor-client/v5/apiv2/model"
-	clienttesting "github.com/mittwald/goharbor-client/v5/apiv2/pkg/testing"
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"
+	"github.com/xuesea/goharbor-client/v5/apiv2/internal/api/client/artifact"
+	"github.com/xuesea/goharbor-client/v5/apiv2/mocks"
+	"github.com/xuesea/goharbor-client/v5/apiv2/model"
+	clienttesting "github.com/xuesea/goharbor-client/v5/apiv2/pkg/testing"
 )
 
 var (

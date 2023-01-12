@@ -6,8 +6,8 @@ import (
 	"context"
 	"testing"
 
-	clienttesting "github.com/mittwald/goharbor-client/v5/apiv2/pkg/testing"
 	"github.com/stretchr/testify/require"
+	clienttesting "github.com/xuesea/goharbor-client/v5/apiv2/pkg/testing"
 )
 
 func TestAPIGetPing(t *testing.T) {

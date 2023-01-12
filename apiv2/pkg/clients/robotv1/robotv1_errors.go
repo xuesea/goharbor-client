@@ -5,8 +5,8 @@ import (
 
 	"github.com/go-openapi/runtime"
 
-	"github.com/mittwald/goharbor-client/v5/apiv2/internal/api/client/robotv1"
-	"github.com/mittwald/goharbor-client/v5/apiv2/pkg/errors"
+	"github.com/xuesea/goharbor-client/v5/apiv2/internal/api/client/robotv1"
+	"github.com/xuesea/goharbor-client/v5/apiv2/pkg/errors"
 )
 
 // handleSwaggerRobotV1Errors takes a swagger generated error as input,

@@ -5,8 +5,8 @@ import (
 
 	"github.com/go-openapi/runtime"
 
-	projectapi "github.com/mittwald/goharbor-client/v5/apiv2/internal/api/client/project"
-	"github.com/mittwald/goharbor-client/v5/apiv2/pkg/errors"
+	projectapi "github.com/xuesea/goharbor-client/v5/apiv2/internal/api/client/project"
+	"github.com/xuesea/goharbor-client/v5/apiv2/pkg/errors"
 )
 
 // handleSwaggerProjectErrors takes a swagger generated error as input,
